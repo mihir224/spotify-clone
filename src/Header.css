@@ -1,0 +1,33 @@
+body{
+    background-color: #432C7A;
+}
+button{
+    font-family: Montserrat;
+}
+.arrows{
+    text-decoration: none;
+    background-color: black;
+    color: aliceblue;
+    border: 5px solid transparent;
+    border-radius: 30px;
+    width: 40px;
+    margin-right: 16px;
+    opacity: 0.5;
+}
+
+.profile{
+    padding-top:20px;
+    float: right;
+    color:#cfcfcf;
+    padding: 0px 15px;
+    text-align:center;
+    font-size: 16px;
+    border-radius: 30px;
+    background-color:black;
+    border:10px solid transparent;
+}
+.profile > img,
+.profile > span{
+    vertical-align:middle;
+    padding:0px 5px; 
+}
