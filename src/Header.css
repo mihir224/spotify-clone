@@ -1,23 +1,25 @@
+body{
+    font-family: Montserrat;
+    margin: 0;
+}
 .headerDiv{
     background-color: #432C7A;
     display:block;
     height: 90px;
     margin-left: 180px;
+    
 }
 .greetingDiv{
     margin-left: 180px;
     background-color: #3C4048;
     display: inline-block;
-    width: 100%;
+    width: 86.8%;
     color: white;
     padding: 16px 0 0 10px;
     text-decoration: none;
     font-weight: 100;
 }
-body{
-    margin: 0%;
-    font-family: Montserrat;
-}
+
 .arrows{
     margin:27px 14px;
     text-decoration: none;

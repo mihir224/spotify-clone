@@ -1,20 +1,28 @@
 import React from "react";
 import Header from "./Header";
 import PlaylistRect from "./PlaylistRect";
+import PlaylistSq from "./PlaylistSq";
 import Footer from "./Footer";
-import playlists from "../playlistsRect";
+import playlistsRect from "../playlistsRect";
+import playlistsSq from "../playlistsSq";
 
 
-function createPlayList(playlist){
+function createPlayListRect(playlist){
     return(
         <PlaylistRect key={playlist.id} id={playlist.id} img={playlist.imgURL} name={playlist.name} />
+    );
+}
+function createPlayListSq(playlist){
+    return(
+        <PlaylistSq key={playlist.id} id={playlist.id} img={playlist.imgURL} name={playlist.name} artist={playlist.artists} />
     );
 }
 function App(){
     return (
         <div>
             <Header />    
-            {playlists.map(createPlayList)}   
+            {playlistsRect.map(createPlayListRect)}  
+            {playlistsSq.map(createPlayListSq)} 
             <Footer />
         </div>
     );

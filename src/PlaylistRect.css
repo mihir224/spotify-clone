@@ -1,7 +1,8 @@
 .playlistRectDiv{
     background-color: #3C4048;
     padding: 5px;
-    float: right;  
+    float: right;
+   
 }
 .playlistRectButton{
     border:10px solid transparent;
@@ -12,7 +13,6 @@
     margin:5px;
     width: 30em;
     text-align: start;
-    
 }
 .playlistRectButton:hover{
     background:rgba(247,247,247,0.4);

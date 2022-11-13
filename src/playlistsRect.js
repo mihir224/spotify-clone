@@ -1,4 +1,4 @@
-const playlists=[
+const playlistsRect=[
     {
     id:1,
     imgURL:"https://uploads-ssl.webflow.com/5e36e6f21212670638c0d63c/5e39d85cee05be53d238681a_likedSongs.png",
@@ -31,4 +31,4 @@ const playlists=[
 },
 ];
 
-export default playlists;
+export default playlistsRect;
