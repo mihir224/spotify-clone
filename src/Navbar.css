@@ -1,0 +1,16 @@
+.navbarDiv{
+    background-color: black;
+    width: 180px;
+    float: left;
+}
+.logo > img,
+.logo > h1{
+    background-color: white;
+    vertical-align: middle;
+    border-radius: 30px;
+}
+.logo{
+    color: white;
+    font-size: 22px;
+    padding: 10px;
+}
