@@ -1,33 +1,53 @@
-body{
+.headerDiv{
     background-color: #432C7A;
+    display:block;
+    height: 90px;
+    margin-left: 180px;
 }
-button{
+.greetingDiv{
+    margin-left: 180px;
+    background-color: #3C4048;
+    display: inline-block;
+    width: 100%;
+    color: white;
+    padding: 16px 0 0 10px;
+    text-decoration: none;
+    font-weight: 100;
+}
+body{
+    margin: 0%;
     font-family: Montserrat;
 }
 .arrows{
+    margin:27px 14px;
     text-decoration: none;
     background-color: black;
     color: aliceblue;
     border: 5px solid transparent;
     border-radius: 30px;
     width: 40px;
-    margin-right: 16px;
     opacity: 0.5;
+}
+.arrows:hover{
+    opacity: 0.8;
 }
 
 .profile{
-    padding-top:20px;
+    margin:15px;
     float: right;
-    color:#cfcfcf;
-    padding: 0px 15px;
+    padding: 0px 10px;
     text-align:center;
-    font-size: 16px;
+    font-size: 15px;
     border-radius: 30px;
-    background-color:black;
     border:10px solid transparent;
+    background: rgba(0,0,0,1); 
+    color:rgba(207,207,207,1);
+}
+.profile:hover{
+    background: rgba(0,0,0,0.7);
 }
 .profile > img,
 .profile > span{
     vertical-align:middle;
-    padding:0px 5px; 
+    padding:0px 5px;  
 }
