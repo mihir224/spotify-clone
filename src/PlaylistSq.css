@@ -4,20 +4,17 @@
     padding: 20px;
     width: 14.72%;
 }
-
 .playlistSqButton{
     border:10px solid transparent;
     border-radius: 5px;
     background-color:#EFEFEF;
     background:rgba(247,247,247,0.2);
     color:rgb(255, 255, 255,1);
-    border-radius: 6px;
-   
+    border-radius: 6px;  
 }
 .playlistSqButton:hover{
     background:rgba(247,247,247,0.4);
 }
-
 .playlistSqButton > img,
 .playlistSqButton > span{
     padding: 5px;

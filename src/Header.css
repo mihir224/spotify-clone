@@ -1,13 +1,13 @@
 body{
     font-family: Montserrat;
     margin: 0;
+    
 }
 .headerDiv{
     background-color: #432C7A;
-    display:block;
     height: 90px;
     margin-left: 180px;
-    
+    margin-top: 0px;
 }
 .greetingDiv{
     margin-left: 180px;

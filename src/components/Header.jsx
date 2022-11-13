@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../images/img.png";
+import user from "../images/img.png";
 import "../Header.css";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
@@ -11,7 +11,7 @@ const TimeOfDay=new Date().getHours();
         if(TimeOfDay>=12&&TimeOfDay<16){
             return "afternoon";
         }
-        if(TimeOfDay>=16&&TimeOfDay<23){
+        if(TimeOfDay>=16&&TimeOfDay<24){
             return "evening";
         }
     }
@@ -24,7 +24,7 @@ const TimeOfDay=new Date().getHours();
          <form>
          <button className="arrows"><span><ArrowBackIosIcon /></span></button> 
          <button className="arrows"><span><ArrowForwardIosIcon /></span></button>
-         <button className="profile"><img src={Logo} height="40" width="40" alt="user-img"></img><span >{username}</span></button>
+         <button className="profile"><img src={user} height="40" width="40" alt="user-img"></img><span >{username}</span></button>
          </form>
          </div> 
          <div className="greetingDiv"><h1>Good {greetingText()}</h1></div>

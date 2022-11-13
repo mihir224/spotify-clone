@@ -1,10 +1,12 @@
 import React from "react";
 import Header from "./Header";
+import Navbar from "./Navbar";
 import PlaylistRect from "./PlaylistRect";
 import PlaylistSq from "./PlaylistSq";
 import Footer from "./Footer";
 import playlistsRect from "../playlistsRect";
 import playlistsSq from "../playlistsSq";
+
 
 
 function createPlayListRect(playlist){
@@ -20,6 +22,7 @@ function createPlayListSq(playlist){
 function App(){
     return (
         <div>
+            <Navbar />
             <Header />    
             {playlistsRect.map(createPlayListRect)}  
             {playlistsSq.map(createPlayListSq)} 
