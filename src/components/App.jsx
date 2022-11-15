@@ -1,11 +1,13 @@
 import React from "react";
 import Header from "./Header";
 import Navbar from "./Navbar";
+import Heading from "./Heading"
 import PlaylistRect from "./PlaylistRect";
 import PlaylistSq from "./PlaylistSq";
 import Footer from "./Footer";
 import playlistsRect from "../playlistsRect";
 import playlistsSq from "../playlistsSq";
+
 
 
 
@@ -23,7 +25,8 @@ function App(){
     return (
         <div>
             <Navbar />
-            <Header />    
+            <Header /> 
+            <Heading />   
             {playlistsRect.map(createPlayListRect)}  
             {playlistsSq.map(createPlayListSq)} 
             <Footer />

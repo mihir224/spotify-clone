@@ -2,6 +2,37 @@
     background-color: black;
     width: 180px;
     float: left;
+    height: 90px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul>a{
+    list-style: none;
+    background-color: black;
+    margin-top: 0%;
+    color:white;
+    position: relative;
+}
+ul>a>li{
+    display: flex;
+    align-items:center;
+    margin:0 -32px;
+    padding:10px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+ul>a>li:hover{
+    opacity: 1;
+}
+.navIcons{
+    padding-right: 6px;
+   
+}
+.regIcon{
+    font-size: 10px;
+    vertical-align: text-top;
 }
 .logo > img,
 .logo > h1{
@@ -12,5 +43,6 @@
 .logo{
     color: white;
     font-size: 22px;
-    padding: 10px;
+    padding-left: 16px;
+    padding-top: 12px;
 }

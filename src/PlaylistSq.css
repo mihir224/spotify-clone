@@ -1,5 +1,5 @@
 .playlistSqDiv{
-    background-color: #3C4048;
+    background-color: #191A19;
     float: right;  
     padding: 20px;
     width: 14.72%;
@@ -8,12 +8,13 @@
     border:10px solid transparent;
     border-radius: 5px;
     background-color:#EFEFEF;
-    background:rgba(247,247,247,0.2);
+    background:rgba(247,247,247,0.1);
     color:rgb(255, 255, 255,1);
     border-radius: 6px;  
+    font-family: Montserrat;
 }
 .playlistSqButton:hover{
-    background:rgba(247,247,247,0.4);
+    background:rgba(247,247,247,0.2);
 }
 .playlistSqButton > img,
 .playlistSqButton > span{

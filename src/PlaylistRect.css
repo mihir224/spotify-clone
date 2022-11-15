@@ -1,20 +1,20 @@
 .playlistRectDiv{
-    background-color: #3C4048;
+    background-color: #191A19;
     padding: 5px;
     float: right;
 }
 .playlistRectButton{
+    font-family: Montserrat;
     border:10px solid transparent;
     border-radius: 5px;
-    background-color:#EFEFEF;
-    background:rgba(247,247,247,0.2);
+    background:rgba(247,247,247,0.1);
     color:rgb(255, 255, 255,1);
-    margin:5px;
+    margin:5px; 
     width: 30em;
     text-align: start;
 }
 .playlistRectButton:hover{
-    background:rgba(247,247,247,0.4);
+    background:rgba(247,247,247,0.2);
 }
 .playlistRectButton > img,
 .playlistRectButton > span{
