@@ -10,7 +10,6 @@ body{
 
 }
 
-
 .arrows{
     margin:27px 14px;
     text-decoration: none;
@@ -29,13 +28,12 @@ body{
     font-family: Montserrat;
     margin:15px;
     float: right;
-    padding: 0px 10px;
-    text-align:center;
-    font-size: 15px;
+    font-size: 14px;
     border-radius: 30px;
     border:10px solid transparent;
     background: rgba(0,0,0,0.9); 
     color:rgba(207,207,207,1);
+    height: 50px;
     
 }
 
@@ -45,5 +43,10 @@ body{
 .profile > img,
 .profile > span{
     vertical-align:middle;
-    padding:0px 5px;  
+    position: relative;
+    padding:0px 5px; 
+    bottom: 6px; 
+}
+.expand{
+    vertical-align: middle; 
 }
