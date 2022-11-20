@@ -28,6 +28,17 @@ const playlistsSq=[
     imgURL:"https://uploads-ssl.webflow.com/5e36e6f21212670638c0d63c/5e39d85cee05be53d238681a_likedSongs.png",
     name:"Liked Songs",
     artists:"Snoop Dogg, Charles Hamilton, Pritam and more"
+},
+{
+    id:6,
+    imgURL:"https://uploads-ssl.webflow.com/5e36e6f21212670638c0d63c/5e39d85cee05be53d238681a_likedSongs.png",
+    name:"Liked Songs",
+    artists:"Snoop Dogg, Charles Hamilton, Pritam and more"
+},{
+    id:7,
+    imgURL:"https://uploads-ssl.webflow.com/5e36e6f21212670638c0d63c/5e39d85cee05be53d238681a_likedSongs.png",
+    name:"Liked Songs",
+    artists:"Snoop Dogg, Charles Hamilton, Pritam and more"
 }
 
 ];

@@ -7,12 +7,10 @@ body{
     background-color: #432C7A;
     height: 89.5px;
     margin-left: 180px;
-
 }
 
 .arrows{
     margin:27px 14px;
-    text-decoration: none;
     background-color: black;
     color: aliceblue;
     border: 5px solid transparent;
@@ -47,6 +45,7 @@ body{
     padding:0px 5px; 
     bottom: 6px; 
 }
+
 .expand{
     vertical-align: middle; 
 }
