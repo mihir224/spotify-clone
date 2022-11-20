@@ -21,6 +21,7 @@ function createPlayListSq(playlist){
         <PlaylistSq key={playlist.id} id={playlist.id} img={playlist.imgURL} name={playlist.name} artist={playlist.artists} />
     );
 }
+
 function App(){
     return (
         <div>
