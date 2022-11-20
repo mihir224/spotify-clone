@@ -1,0 +1,79 @@
+.footerDiv{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#1d1f1d;
+    color: white;
+    display: flex;
+}
+
+.text-container{
+    margin-top: 24px;
+}
+.img-container{
+    background-color: aliceblue;
+    padding-top: 8px;
+    margin: 15px;
+}
+#playIcon{
+    font-size: 36px;
+}
+.playerIcons{
+    margin: 5px;
+    vertical-align: middle;
+}
+#playerIcons{
+    opacity: 0.7;
+}
+#playerIcons:hover{
+    opacity: 1;
+}
+
+.navigation{
+    flex:1;
+    text-align: center;
+    margin:0px 460px 0 310px;
+    
+}
+
+.navigation-buttons>form>button{
+    color:white;
+    background-color: #1d1f1d;
+    border:0px solid transparent;
+   border-radius: 35px;
+   padding-top: 10px ;
+}
+button{
+    cursor:pointer;
+}
+.progress-container {
+    background:gray;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    height: 4px;
+    width: 100%;
+  }
+  
+  .progress {
+    background-color: white;
+    border-radius: 5px;
+    height: 100%;
+    width: 20%;
+    transition: width 0.1s linear;
+  }
+
+
+#artist{
+    font-size: 12px;
+    opacity: 0.6;
+}
+#artist:hover{
+    opacity: 1;
+}
+.footerAnc:hover{
+    cursor:pointer;
+    text-decoration: underline;
+}
+
