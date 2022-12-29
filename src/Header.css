@@ -1,13 +1,20 @@
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
 body{
     font-family: Montserrat;
     margin: 0;
     background-color: black;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .headerDiv{
     background-color: #432C7A;
     height: 89.5px;
     margin-left: 180px;
+    
 }
 
 .arrows{
@@ -29,22 +36,24 @@ body{
     float: right;
     font-size: 14px;
     border-radius: 30px;
-    border:10px solid transparent;
-    background: rgba(0,0,0,0.9); 
+    border:10px transparent;
     color:rgba(207,207,207,1);
-    height: 50px;
-    
+    height: 35px;
+    background:  rgba(0,0,0,0.9) url("./images/img.png");
+    background-size: 35px;
+    background-position: left;
+    background-repeat: no-repeat;
 }
 
 .profile:hover{
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.6) url("./images/img.png");
+    background-size: 35px;
+    background-position: left;
+    background-repeat: no-repeat;
 }
-.profile > img,
+
 .profile > span{
-    vertical-align:middle;
-    position: relative;
-    padding:0px 5px; 
-    bottom: 6px; 
+    padding: 0 6px 0 40px;
 }
 
 .expand{
