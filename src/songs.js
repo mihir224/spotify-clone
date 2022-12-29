@@ -1,10 +1,11 @@
 import NoLove from "./music/No Love.mp3";
-import Kesariya from "./music/Kesariya.mp3"
+import Kesariya from "./music/Kesariya.mp3";
+import NoLoveCover from "./images/No Love.jpg";
 const songs=[
     {
         id:1,
         src:NoLove,
-        img:"https://i1.sndcdn.com/artworks-GDWvDYFQsThZ8eCf-TbqvVw-t500x500.jpg",
+        img:NoLoveCover,
         name:"No Love",
         artist:"Shubh"
     },

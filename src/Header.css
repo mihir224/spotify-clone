@@ -2,6 +2,7 @@ body{
     font-family: Montserrat;
     margin: 0;
     background-color: black;
+    overflow: hidden;
 }
 .headerDiv{
     background-color: #432C7A;

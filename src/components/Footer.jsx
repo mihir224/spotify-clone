@@ -22,9 +22,9 @@ import logo from "../images/logo192.png"
 function Footer(){
     //const [icon, setIcon] = React.useState(<PlayCircleIcon className="playerIcons" />);
     const [pauseIcon,setPauseIcon]=React.useState(false);
-    let index=0;
+    var index=0;
     const [audio, setAudio] = React.useState(new Audio(songs[index].src));
-   
+   const progressPercent=(audio.currentTime/audio.duration)*100;
    
 
     function handleClick(event){
@@ -44,7 +44,7 @@ function Footer(){
             return (<PlayCircleIcon id="playIcon" className="playerIcons" />);
         }
         else{
-            return <PauseCircleIcon id="playIcon" className="playerIcons" />
+            return <PauseCircleIcon id="pauseIcon" className="playerIcons" />
         }
     }
     
@@ -52,7 +52,7 @@ function Footer(){
         key:"",
         index:"",
         src:"",
-        img:"",
+        img:"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png",
         name:"",
         artist:""
     });
@@ -78,21 +78,19 @@ function Footer(){
             index=0;
         }
         loadSong(songs[index]);
-        setAudio(new Audio(songs[index]));
+        setAudio(new Audio(songs[index].src));
         audio.play();
-        event.preventDefault();
     }
 
     function handlePrev(event){
-       
-        index--;
+       index--;
         if(index<0){
             index=songs.length-1;
         }
         loadSong(songs[index]); 
-        setAudio(new Audio(songs[index]));  
+        setAudio(new Audio(songs[index].src));
         audio.play();    
-       event.preventDefault();
+        
     }
     
     const [isHovering,setHovering]=React.useState(false);
@@ -125,7 +123,7 @@ function Footer(){
                 </form>
             </div>
             <div class="progress-container" id="progress-container">
-          <div class="progress" id="progress"></div>
+          <div class="progress" id="progress" style={{width:`${progressPercent}"%"`}}></div>
         </div>
             </div>
         </div>

@@ -29,14 +29,11 @@
 #playerIcons:hover{
     opacity: 1;
 }
-
 .navigation{
     flex:1;
     text-align: center;
     margin:0px 460px 0 310px;
-    
 }
-
 .navigation-buttons>form>button{
     color:white;
     background-color: #1d1f1d;
@@ -64,9 +61,11 @@ button{
     transition: width 0.1s linear;
   }
 
-
+#song{
+    font-size:14px;
+}
 #artist{
-    font-size: 12px;
+    font-size: 11px;
     opacity: 0.6;
 }
 #artist:hover{
