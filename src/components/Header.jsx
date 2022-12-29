@@ -13,7 +13,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
          <form>
          <button className="arrows"><span><ArrowBackIosIcon /></span></button> 
          <button className="arrows"><span><ArrowForwardIosIcon /></span></button>
-         <button className="profile"><img src={user} height="40" width="40" alt="user-img"></img><span >{username} <ExpandMoreIcon className="expand" /></span></button>
+         <button className="profile"><span >{username} ▾</span></button>
          </form>
          </div> 
   
