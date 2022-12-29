@@ -46,3 +46,6 @@ ul>.navItems>li:hover{
     padding-left: 16px;
     padding-top: 12px;
 }
+hr{
+    width: 220px;
+}
