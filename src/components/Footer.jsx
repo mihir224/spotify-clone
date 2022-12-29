@@ -44,7 +44,7 @@ function Footer(){
             return (<PlayCircleIcon id="playIcon" className="playerIcons" />);
         }
         else{
-            return <PauseCircleIcon id="pauseIcon" className="playerIcons" />
+            return <PauseCircleIcon id="playIcon" className="playerIcons" />
         }
     }
     

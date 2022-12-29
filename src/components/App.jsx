@@ -18,7 +18,7 @@ function createPlayListRect(playlist){
 }
 function createPlayListSq(playlist){
     return(
-        <PlaylistSq key={playlist.id} id={playlist.id} img={playlist.imgURL} name={playlist.name} artist={playlist.artists} />
+        <PlaylistSq key={playlist.id} id={playlist.id} img={playlist.imgURL} name={playlist.name} info={playlist.info} />
     );
 }
 
