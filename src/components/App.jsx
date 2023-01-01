@@ -1,9 +1,11 @@
 import React from "react";
 import Header from "./Header";
 import Navbar from "./Navbar";
-import Heading from "./Heading"
+import Heading from "./Heading";
 import PlaylistRect from "./PlaylistRect";
+import Hss from "./Hss";
 import PlaylistSq from "./PlaylistSq";
+import Hsss from "./Hsss";
 import Footer from "./Footer";
 import playlistsRect from "../playlistsRect";
 import playlistsSq from "../playlistsSq";
@@ -29,8 +31,18 @@ function App(){
             <Header /> 
             <Heading />   
             {playlistsRect.map(createPlayListRect)}  
-            {playlistsSq.map(createPlayListSq)} 
+            <Hss />
+            {playlistsSq.map((item,index)=>{
+                if(index>=0&&index<=4){
+                    return <PlaylistSq key={item.id} id={item.id} img={item.imgURL} name={item.name} info={item.info} />}
+            })} 
+            <Hsss />
+            {playlistsSq.map((item,index)=>{
+                if(index>=5&&index<=9){
+                    return <PlaylistSq key={item.id} id={item.id} img={item.imgURL} name={item.name} info={item.info} />}
+            })} 
             <Footer />
+            
         </div>
     );
 }

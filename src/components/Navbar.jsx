@@ -1,5 +1,5 @@
 import React from "react";
-import "../Navbar.css";
+import "../styles/Navbar.css";
 import logo from "../images/spotify.png"
 import HomeIcon from '@mui/icons-material/Home';
 import SearchIcon from '@mui/icons-material/Search';
@@ -11,7 +11,7 @@ import playlistsNav from "../playlistsNav";
 function createNavPlaylist(playlist){
     return(
         <ul>
-            <a href={playlist.href} className="navItems"><li style={{color:"white",listStyle:"none"}}>{playlist.name}</li></a>
+            <a href={playlist.href} className="navItems2"><li key={playlist.id} id={playlist.id} style={{color:"white",listStyle:"none"}}>{playlist.name}</li></a>
         </ul>
     )
 }

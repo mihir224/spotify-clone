@@ -1,5 +1,5 @@
 import React from "react";
-import "../Heading.css";
+import "../styles/Heading.css";
 const TimeOfDay=new Date().getHours();
     function greetingText(){
         if(TimeOfDay>=0&&TimeOfDay<12){

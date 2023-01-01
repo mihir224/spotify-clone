@@ -1,5 +1,5 @@
 import React from "react";
-import "../PlaylistSq.css";
+import "../styles/PlaylistSq.css";
 
 
 function PlaylistSq(props){

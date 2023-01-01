@@ -1,8 +1,6 @@
 import React from "react";
-import "../Footer.css";
+import "../styles/Footer.css";
 import songs from "../songs";
-import NoLove from "../music/No Love.mp3"
-import ReactDOM from "react-dom"
 import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
 import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 import PauseCircleIcon from '@mui/icons-material/PauseCircle';
@@ -24,10 +22,15 @@ function Footer(){
     const [pauseIcon,setPauseIcon]=React.useState(false);
     var index=0;
     const [audio, setAudio] = React.useState(new Audio(songs[index].src));
-   const progressPercent=(audio.currentTime/audio.duration)*100;
+    const progressPercent=(audio.currentTime/audio.duration)*100;
    
 
-    function handleClick(event){
+   const customStyling={
+       width:`${progressPercent}"%"`
+   }
+  
+  
+ function handleClick(event){
         if(!pauseIcon){
             setPauseIcon(true);
             loadSong(songs[index]);
@@ -44,7 +47,7 @@ function Footer(){
             return (<PlayCircleIcon id="playIcon" className="playerIcons" />);
         }
         else{
-            return <PauseCircleIcon id="playIcon" className="playerIcons" />
+            return (<PauseCircleIcon id="playIcon" className="playerIcons" />);
         }
     }
     
@@ -53,8 +56,8 @@ function Footer(){
         index:"",
         src:"",
         img:"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png",
-        name:"",
-        artist:""
+        name:"Untitled",
+        artist:"Untitled"
     });
     
     
@@ -93,20 +96,20 @@ function Footer(){
         
     }
     
-    const [isHovering,setHovering]=React.useState(false);
+    // const [isHovering,setHovering]=React.useState(false);
     
-    function handleMouseOver(){
-        setHovering(true);
-    }
-    function handleMouseOut(){
-        setHovering(false);
-    }
+    // function handleMouseOver(){
+    //     setHovering(true);
+    // }
+    // function handleMouseOut(){
+    //     setHovering(false);
+    // }
 
     return(
         <div className="footerDiv">
         <audio src={song.src} id="audio" ></audio>
             <div className="img-container">
-                <a href="#" className="footerAnc"><img src={song.img} id="album-cover" height="45" width="55"></img></a><br />
+                <a href="#" className="footerAnc"><img src={song.img} id="album-cover" height="54" width="54"></img></a><br />
             </div>
             <div className="text-container">
             <span><a href="#" className="footerAnc" id="song">{song.name}</a></span><br />
@@ -117,13 +120,13 @@ function Footer(){
             <form>
                 <button id="prev" type="button" onClick={(event)=>{event.preventDefault();}}><ShuffleIcon className="playerIcons" id="playerIcons"/></button>
                 <button id="prev" type="button" onClick={handlePrev}><SkipPreviousIcon className="playerIcons" id="playerIcons"/></button>
-                <button id="play" type="button" onClick={handleClick} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>{handleIcon()}</button>
+                <button id="play" type="button" onClick={handleClick}>{handleIcon()}</button>
                 <button id="next" type="button" onClick={handleSkip}><SkipNextIcon className="playerIcons" id="playerIcons"/></button>
                 <button id="prev" type="button" onClick={(event)=>{event.preventDefault();}}><RepeatIcon className="playerIcons" id="playerIcons"/></button>
                 </form>
             </div>
-            <div class="progress-container" id="progress-container">
-          <div class="progress" id="progress" style={{width:`${progressPercent}"%"`}}></div>
+            <div className="progress-container" id="progress-container">
+          <div className="progress" id="progress" style={customStyling}></div>
         </div>
             </div>
         </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import user from "../images/img.png";
-import "../Header.css";
+import "../styles/Header.css";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';

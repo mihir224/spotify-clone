@@ -1,0 +1,43 @@
+.playlistSqDiv{
+    background-color: #191A19;
+    float: right;  
+    padding: 18px;
+    margin-right: -6px;
+    
+  
+}
+.playlistSqButton{
+    border:10px solid transparent;
+    border-radius: 5px;
+    background-color:#EFEFEF;
+    background:rgba(247,247,247,0.1);
+    color:rgb(255, 255, 255,1);
+    border-radius: 6px;  
+    font-family: Montserrat;
+    
+}
+.playlistSqButton:hover{
+    background:rgba(247,247,247,0.2);
+}
+.playlistSqButton > img,
+.playlistSqButton > span{
+    padding: 5px;
+    display: block;
+    width:175px;
+    border-radius: 6px;
+    text-align: start;
+}
+.mixName{
+    font-weight:600;
+    font-size: 16px;
+}
+.info{
+    opacity: 0.6;
+}
+
+@media screen and (max-width:1199px){
+    .playlistSqDiv{
+        float: right;
+    
+    }
+}
