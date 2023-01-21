@@ -20,12 +20,11 @@ import logo from "../images/logo192.png"
 function Footer(){
     //const [icon, setIcon] = React.useState(<PlayCircleIcon className="playerIcons" />);
     const [pauseIcon,setPauseIcon]=React.useState(false);
-    var index=0;
+  
+    const [index,setIndex]=React.useState(0);
     const [audio, setAudio] = React.useState(new Audio(songs[index].src));
     const progressPercent=(audio.currentTime/audio.duration)*100;
-   
-
-   const customStyling={
+    const customStyling={
        width:`${progressPercent}"%"`
    }
   
@@ -76,23 +75,25 @@ function Footer(){
     }
 
     function handleSkip(event){
-        index++;
+        setIndex(index+1);
+        audio.pause();
         if(index>songs.length-1){
-            index=0;
+            setIndex(0);
         }
         loadSong(songs[index]);
         setAudio(new Audio(songs[index].src));
-        audio.play();
+       
     }
 
     function handlePrev(event){
-       index--;
+        setIndex(index-1);
+       audio.pause();
         if(index<0){
-            index=songs.length-1;
+            setIndex(songs.length-1);
         }
         loadSong(songs[index]); 
         setAudio(new Audio(songs[index].src));
-        audio.play();    
+          
         
     }
     

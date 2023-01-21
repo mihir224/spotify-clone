@@ -18,7 +18,7 @@ function createNavPlaylist(playlist){
 function Navbar(){
     return(
         <div className="navbarDiv">
-        <a href="#"><h1 className="logo"><img src={logo} alt="logo-img" height="40" width="40"></img> Spotify<span className="regIcon">®</span></h1></a>
+        <a href="#" target="_self"><h1 className="logo"><img src={logo} alt="logo-img" height="40" width="40"></img> Spotify<span className="regIcon">®</span></h1></a>
         <ul >
                 <a href="#" className="navItems"><li><HomeIcon className="navIcons"/>Home</li></a>
                 <a href="#" className="navItems"><li><SearchIcon className="navIcons"/>Search</li></a>

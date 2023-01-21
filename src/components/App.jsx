@@ -12,25 +12,12 @@ import playlistsSq from "../playlistsSq";
 
 
 
-
-function createPlayListRect(playlist){
-    return(
-        <PlaylistRect key={playlist.id} id={playlist.id} img={playlist.imgURL} name={playlist.name} />
-    );
-}
-function createPlayListSq(playlist){
-    return(
-        <PlaylistSq key={playlist.id} id={playlist.id} img={playlist.imgURL} name={playlist.name} info={playlist.info} />
-    );
-}
-
 function App(){
     return (
         <div>
             <Navbar />
             <Header /> 
             <Heading />   
-            {/* {playlistsRect.map(createPlayListRect)}   */}
             <Hss />
             <Hsss />
             <Footer />

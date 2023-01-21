@@ -6,16 +6,14 @@
     background-color:#1d1f1d;
     color: white;
     display: flex;
+   
 }
 
 .text-container{
     margin-top: 24px;
 }
 .img-container{
-    background-color: aliceblue;
-    margin: 15px;
-   
-    
+    margin: 15px;    
 }
 #playIcon{
     font-size: 36px;
