@@ -1,12 +1,12 @@
 .footerDiv{
-    position: fixed;
+    position:fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color:#1d1f1d;
     color: white;
     display: flex;
-   
+   flex-direction: row;
 }
 
 .text-container{
@@ -29,10 +29,12 @@
     opacity: 1;
 }
 .navigation{
-    flex:1;
+   flex-grow: 1;
+    flex-shrink: 0;
     text-align: center;
     margin:0px 460px 0 310px;
 }
+
 .navigation-buttons>form>button{
     color:white;
     background-color: #1d1f1d;
@@ -40,6 +42,7 @@
    border-radius: 35px;
    padding-top: 10px ;
 }
+
 button{
     cursor:pointer;
 }

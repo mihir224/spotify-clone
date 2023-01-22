@@ -11,7 +11,7 @@
     background:rgba(247,247,247,0.1);
     color:rgb(255, 255, 255,1);
     border-radius: 6px;  
-    font-family: Montserrat;
+    font-family:Montserrat;
 }
 .playlistSqButton:hover{
     background:rgba(247,247,247,0.2);
@@ -35,6 +35,6 @@
 @media screen and (max-width:800px){
     .test{
         flex-direction:column ;
-    
+        
     }
 }
