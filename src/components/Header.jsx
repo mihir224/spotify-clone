@@ -1,5 +1,4 @@
 import React from "react";
-import user from "../images/img.png";
 import "../styles/Header.css";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
@@ -11,8 +10,8 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
      
         <div className="headerDiv">
          <form>
-         <button className="arrows"><span><ArrowBackIosIcon /></span></button> 
-         <button className="arrows"><span><ArrowForwardIosIcon /></span></button>
+         <button className="arrows"><span><ArrowBackIosIcon id="arrowIcon"/></span></button> 
+         <button className="arrows"><span><ArrowForwardIosIcon id="arrowIcon"/></span></button>
          <button className="profile"><span >{username} ▾</span></button>
          </form>
          </div> 

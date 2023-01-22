@@ -2,13 +2,10 @@ import React from "react";
 import Header from "./Header";
 import Navbar from "./Navbar";
 import Heading from "./Heading";
-import PlaylistRect from "./PlaylistRect";
-import Hss from "./Hss";
-import PlaylistSq from "./PlaylistSq";
-import Hsss from "./Hsss";
+import Hss from "./SubHeadOne";
+import Hsss from "./SubHeadTwo";
 import Footer from "./Footer";
-import playlistsRect from "../playlistsRect";
-import playlistsSq from "../playlistsSq";
+
 
 
 

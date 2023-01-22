@@ -10,9 +10,10 @@ import playlistsNav from "../playlistsNav";
 
 function createNavPlaylist(playlist){
     return(
+        <div className="playNav">
         <ul>
             <a href={playlist.href} className="navItems2"><li key={playlist.id} id={playlist.id} style={{color:"white",listStyle:"none"}}>{playlist.name}</li></a>
-        </ul>
+        </ul></div>
     )
 }
 function Navbar(){
