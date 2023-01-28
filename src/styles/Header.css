@@ -1,14 +1,18 @@
+
 body{
     font-family:Montserrat;
     margin: 0;
-    background-color: #191919;
-    
+    background-color: #101010;
+    overflow-x:hidden;
+    scroll-behavior: smooth;
     
 }
 .headerDiv{
     background-color: #432C7A;
-    height: 75px;
+    height: 12vh;
+    margin-left: 220px;
 }
+
 
 .arrows{
     margin:27px 14px;
@@ -52,35 +56,15 @@ body{
 }
 
 
-
-@media screen and (max-width:530px){
-    .profile{
-        margin:5px;
-        font-size: 0%;
-        width: 33px;
+@media screen and (max-width:450px){
+    .headerDiv{
+        width: 85vw;
     }
     
-}
-@media screen and (max-width:400px){
-    .profile{
-        font-size: 0%;
-        width: 20px;
-        height: 20px;
-        background-size: 25px;
-    }
-   
-    
-}
-@media screen and (max-width:390px){
-    .profile{
-        font-size: 0%;
-        width: 0;
-        height: 0;
-        background-size:0;
-    }
-   
-}
-
-.expand{
-    vertical-align: middle; 
+     .profile{
+         right: 0;
+     }   
+     .profile>span{
+         font-size: 12px;
+     }
 }

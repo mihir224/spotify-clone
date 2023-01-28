@@ -1,21 +1,22 @@
 .playlistSqDiv{
-    background-color: #191A19;
-    padding:0px 13.5px 20px 13.5px;
-    
-  
+    background-color: #101010;
+    padding:0px 13.5px 20px 13.5px;  
 }
 .playlistSqButton{
     border:10px solid transparent;
     border-radius: 5px;
-    background-color:#EFEFEF;
-    background:rgba(247,247,247,0.1);
+    background:rgba(247,247,247,0.04);
     color:rgb(255, 255, 255,1);
-    border-radius: 6px;  
+    border-radius: 7px;  
     font-family:Montserrat;
+    transition: 0.5s;
+
 }
+
 .playlistSqButton:hover{
-    background:rgba(247,247,247,0.2);
+    background:rgba(247,247,247,0.12);
 }
+
 .playlistSqButton > img,
 .playlistSqButton > span{
     padding: 5px;
@@ -32,9 +33,8 @@
     opacity: 0.6;
 }
 
-@media screen and (max-width:800px){
-    .test{
-        flex-direction:column ;
-        
-    }
+@media screen and (max-width:400px){
+ .playlistSqDiv{
+    align-items: center;
+ }
 }

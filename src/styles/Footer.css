@@ -3,11 +3,11 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color:#1d1f1d;
+    background-color:#141414;
     color: white;
     display: flex;
-   flex-direction: row;
-   overflow-x:scroll ;
+    border:1px solid #292929;
+   overflow-x:scroll;
 }
 
 .text-container{
@@ -38,8 +38,8 @@
 
 .navigation-buttons>form>button{
     color:white;
-    background-color: #1d1f1d;
-    border:0px solid transparent;
+    background-color:#141414;
+    border:0px transparent;
    border-radius: 35px;
    padding-top: 10px ;
 }
@@ -60,7 +60,7 @@ button{
     background-color: white;
     border-radius: 5px;
     height: 100%;
-    width: 15%;
+    width: 0%;
     transition: width 0.1s linear;
   }
 

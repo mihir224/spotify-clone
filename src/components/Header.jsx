@@ -9,10 +9,13 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
      return(
      
         <div className="headerDiv">
-         <form>
+         <form id="formHead">
          <button className="arrows"><span><ArrowBackIosIcon id="arrowIcon"/></span></button> 
          <button className="arrows"><span><ArrowForwardIosIcon id="arrowIcon"/></span></button>
-         <button className="profile"><span >{username} ▾</span></button>
+         <button className="profile"><span>{username} ▾</span></button>
+         <ul>
+             <li ></li>
+         </ul>
          </form>
          </div> 
   

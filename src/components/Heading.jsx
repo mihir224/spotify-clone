@@ -26,7 +26,7 @@ const TimeOfDay=new Date().getHours();
 function Heading(){
     return (
         <div>
-    <div className="greetingDiv"><h1>Good {greetingText()}</h1></div>
+    <div className="greetingDiv"><h1 id="greetingText">Good {greetingText()}</h1></div>
     <div className="test">{playlistsRect.map(createPlayListRect)}  </div>
     </div>
 

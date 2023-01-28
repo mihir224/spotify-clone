@@ -23,10 +23,7 @@ function Footer(){
   
     const [index,setIndex]=React.useState(0);
     const [audio, setAudio] = React.useState(new Audio(songs[index].src));
-    const progressPercent=(audio.currentTime/audio.duration)*100;
-    const customStyling={
-       width:`${progressPercent}"%"`
-   }
+   
   
   
  function handleClick(event){
@@ -97,6 +94,10 @@ function Footer(){
         
     }
     
+    const progressPercent=(audio.currentTime/audio.duration)*100;
+    const customStyling={
+       width:`${progressPercent}"%"`
+   }
     // const [isHovering,setHovering]=React.useState(false);
     
     // function handleMouseOver(){

@@ -1,5 +1,5 @@
 .h2div{
-     background-color: #191A19;
+     background-color: #101010;
     width: auto;
     height: 80px;
     color: white;
@@ -7,4 +7,5 @@
     padding-top: 10px;
     display: flex;
     font-size: 14px;
+    margin-left: 220px;
 }
