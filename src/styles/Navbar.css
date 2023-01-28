@@ -2,8 +2,12 @@
     background-color: black;
     width: 220px;
     float: left;
-    height: 100%;
+    position: fixed;
+    height: 100vh;
+    overflow: auto;
+ 
 }
+
 a{
     text-decoration: none;
     color: white;
@@ -17,6 +21,7 @@ ul>.navItems{
     position: relative;
 }
 ul>.navItems>li{
+
     display: flex;
     align-items:center;
     margin:0 -32px;
@@ -64,3 +69,4 @@ hr{
     opacity: 0.3;
     text-align: center;
 }
+
