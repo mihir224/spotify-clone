@@ -3,9 +3,8 @@
     width: 220px;
     float: left;
     position: fixed;
-    height: 100vh;
+    height: 92%;
     overflow: auto;
- 
 }
 
 a{
