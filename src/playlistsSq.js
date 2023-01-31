@@ -32,32 +32,32 @@ const playlistsSq=[
 {
     id:6,
     imgURL:"https://lite-images-i.scdn.co/image/ab67706f000000020b5dffb6f645059b157fc77b",
-    name:"Power Workout",
-    info:""
+    name:"Rap Workout",
+    info:"By Spotify"
 },
 {
     id:7,
     imgURL:"https://i.scdn.co/image/ab67706f000000028c01cd68c20590e60c130f39",
-    name:"Workout Hip-Hop",
-    info:""
+    name:"Workout Hits",
+    info:"By Spotify"
 },
 {
     id:8,
     imgURL:"https://lite-images-i.scdn.co/image/ab67706f000000029249b35f23fb596b6f006a15",
     name:"Beast Mode",
-    info:""
+    info:"By Spotify"
 },
 {
     id:9,
     imgURL:"https://i.scdn.co/image/ab67706f00000002c811b5d005a7c0d226350c46",
-    name:"Workout Hits",
-    info:""
+    name:"Workout Hip-Hop",
+    info:"By Spotify"
 },
 {
     id:10,
     imgURL:"https://i.scdn.co/image/ab67706f000000025b9afc20f73de2953ea450f7",
-    name:"Rap Workout",
-    info:""
+    name:"Power Workout",
+    info:"By Spotify"
 }
 
 ];
