@@ -4,7 +4,7 @@
     float: left;
     position: fixed;
     height: 92%;
-    overflow: auto;
+    overflow-x: hidden;
 }
 
 a{

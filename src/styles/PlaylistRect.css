@@ -2,7 +2,6 @@
     display: flex;    
     flex-wrap: wrap;
     margin-left: 220px;
-    
 }
 .playlistRectDiv{
     background-color: #101010;
@@ -26,8 +25,6 @@
     .playlistRectButton{
         width:80vw;
     }
-    
-
 }
 .playlistRectButton:hover{
     background:rgba(247,247,247,0.2);

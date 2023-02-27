@@ -20,7 +20,7 @@ import logo from "../images/logo192.png"
 function Footer(){
     //const [icon, setIcon] = React.useState(<PlayCircleIcon className="playerIcons" />);
     const [pauseIcon,setPauseIcon]=React.useState(false);
-  
+    const [progressPercent,setProgressPercent]=React.useState(0);
     const [index,setIndex]=React.useState(0);
     const [audio, setAudio] = React.useState(new Audio(songs[index].src));
    
@@ -32,10 +32,16 @@ function Footer(){
             loadSong(songs[index]);
             audio.play();
         }
+        // else if(audio.currentTime===audio.duration){
+        //     setPauseIcon(false);
+        //     handleSkip();
+        //     setPauseIcon(true);
+        // }
         else{
             setPauseIcon(false);
             audio.pause();
         }
+
         event.preventDefault();
     }
     function handleIcon(){
@@ -78,7 +84,7 @@ function Footer(){
             setIndex(0);
         }
         loadSong(songs[index]);
-        setAudio(new Audio(songs[index].src));
+        setAudio(new Audio(songs[index+1].src));
        
     }
 
@@ -89,14 +95,19 @@ function Footer(){
             setIndex(songs.length-1);
         }
         loadSong(songs[index]); 
-        setAudio(new Audio(songs[index].src));
-          
-        
+        setAudio(new Audio(songs[index-1].src));
+      
     }
-    
-    const progressPercent=(audio.currentTime/audio.duration)*100;
+  React.useEffect(()=>{
+      setTimeout(()=>setProgressPercent((audio.currentTime/audio.duration)*100), 1000)
+  },[audio.currentTime])
+    console.log(progressPercent);
     const customStyling={
-       width:`${progressPercent}"%"`
+       width: progressPercent + "%",
+       backgroundColor: "white",
+       borderRadius: "5px",
+       height: "100%",
+       transition:"width 0.1s linear"
    }
     // const [isHovering,setHovering]=React.useState(false);
     
@@ -128,7 +139,8 @@ function Footer(){
                 </form>
             </div>
             <div className="progress-container" id="progress-container">
-          <div className="progress" id="progress" style={customStyling}></div>
+          <div style={customStyling}></div>
+         
         </div>
             </div>
         </div>

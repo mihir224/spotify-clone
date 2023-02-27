@@ -5,15 +5,19 @@ body{
     background-color: #101010;
     overflow-x:hidden;
     scroll-behavior: smooth;
-    
 }
 .headerDiv{
     background-color: #432C7A;
     height: 12vh;
     margin-left: 220px;
 }
-
-
+#dropdown{
+    display: none;
+    margin-left: 75vw;
+    color: white;
+    background-color: #101010;
+    position: absolute;
+}
 .arrows{
     margin:27px 14px;
     background-color: black;
@@ -44,10 +48,13 @@ body{
 }
 
 .profile:hover{
-    background: rgba(0,0,0,0.6) url("../images/img.png");
+    background: rgba(0,0,0,0.4) url("../images/img.png");
     background-size: 33px;
     background-position: left;
     background-repeat: no-repeat;
+}
+.profile:hover+#dropdown{
+   display:block;
 }
 
 .profile > span{

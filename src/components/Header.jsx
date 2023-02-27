@@ -13,9 +13,15 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
          <button className="arrows"><span><ArrowBackIosIcon id="arrowIcon"/></span></button> 
          <button className="arrows"><span><ArrowForwardIosIcon id="arrowIcon"/></span></button>
          <button className="profile"><span>{username} ▾</span></button>
+         {/* <div id="dropdown">
          <ul>
-             <li ></li>
+             <li>Account</li>
+             <li>Profile</li>
+             <li>Settings</li>
+             <hr />
+             <li>Logout</li>
          </ul>
+         </div> */}
          </form>
          </div> 
   
