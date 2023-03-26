@@ -4,7 +4,7 @@
     float: left;
     position: fixed;
     height: 92%;
-    overflow-x: hidden;
+
 }
 
 a{
@@ -68,4 +68,8 @@ hr{
     opacity: 0.3;
     text-align: center;
 }
+#playNav{
+    max-height: 35vh;
+    overflow-y: scroll;
 
+}
