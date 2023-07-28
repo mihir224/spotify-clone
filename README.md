@@ -7,7 +7,7 @@ User Authentication: The application allows users to sign up and log in using th
 
 Song Playback: Users can browse and play songs just like in the original Spotify application. The playback controls include play, pause, skip, and previous, providing an immersive music listening experience.
 
-Real-time Updates: The application features real-time updates, allowing users to see the changes in the song state when they skip a song.
+Real-time Updates: The application features real-time updates, allowing users to see the changes the progress of the song.
 
 # Technologies Used
 React.js: This is solely a React based project, which I made after learning React to showcase my skills.
