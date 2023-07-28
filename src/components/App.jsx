@@ -2,12 +2,9 @@ import React from "react";
 import Header from "./Header";
 import Navbar from "./Navbar";
 import Heading from "./Heading";
-import Hss from "./SubHeadOne";
-import Hsss from "./SubHeadTwo";
+import SubHeadOne from "./SubHeadOne";
+import SubHeadTwo from "./SubHeadTwo";
 import Footer from "./Footer";
-
-
-
 
 function App(){
     return (
@@ -15,10 +12,9 @@ function App(){
             <Navbar />
             <Header /> 
             <Heading />   
-            <Hss />
-            <Hsss />
+            <SubHeadOne />
+            <SubHeadTwo />
             <Footer />
-            
         </div>
     );
 }
