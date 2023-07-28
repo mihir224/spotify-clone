@@ -69,7 +69,7 @@ hr{
     text-align: center;
 }
 #playNav{
-    max-height: 35vh;
+    max-height: 80%;
     overflow-y: scroll;
 
 }
